@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head><title></title>
+<script src="TestCaseManager.js" type="text/javascript"></script>
+<script type="text/javascript">
+function loaded() {
+	runTestManager();
+}
+function runTestManager() {
+
+	var testCaseResult = runTests([test1, test2, test3]);
+	console.log(testCaseResult);
+
+}
+function test1() {
+	return testResult(true, true);
+}
+function test2() {
+	return testResult(false, false);
+}
+function test3() {
+	return testResult(true, false);
+}
+</script>
+</head>
+<body onload="loaded()">
+</body>
+</html>
